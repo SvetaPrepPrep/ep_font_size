@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SvetaPrepPrep/ep_font_size.git"
+    "url": "git+https://github.com/SvetaPrepPrep/ep_font_size2.git"
   },
   "bugs": {
-    "url": "https://github.com/SvetaPrepPrep/ep_font_size/issues"
+    "url": "https://github.com/SvetaPrepPrep/ep_font_size2/issues"
   },
-  "homepage": "https://github.com/SvetaPrepPrep/ep_font_size#readme",
+  "homepage": "https://github.com/SvetaPrepPrep/ep_font_size2#readme",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
