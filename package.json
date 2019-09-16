@@ -1,21 +1,29 @@
 {
   "description": "Add support for Font Sizes",
-  "name": "ep_font_size",
-  "version": "0.1.11",
+  "name": "ep_font_size2",
+  "version": "0.0.1",
   "license": "Apache-2.0",
-  "author": {
-    "name": "Sveta Shchukina",
-    "email": "sveta@preprep.ru"
+  "author": "Sveta Shchukina <sveta@preprep.ru>",
+  "dependencies": {
+    "create-npmrc": "^2.0.2"
   },
-  "dependencies": {},
   "peerDependencies": {
-    "ep_etherpad-lite":">=1.5.1"
+    "ep_etherpad-lite": ">=1.5.1"
   },
   "engines": {
     "node": "*"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SvetaPrepPrep/ep_font_size.git"
+    "url": "git+https://github.com/SvetaPrepPrep/ep_font_size.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SvetaPrepPrep/ep_font_size/issues"
+  },
+  "homepage": "https://github.com/SvetaPrepPrep/ep_font_size#readme",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

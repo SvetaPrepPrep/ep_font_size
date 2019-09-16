@@ -5,12 +5,12 @@ var sizes = ["fs8", "fs9", "fs10", "fs11", "fs12", "fs13", "fs14", "fs15", "fs16
 * UI 
 */ 
 exports.eejsBlock_editbarMenuLeft = function (hook_name, args, cb) {
-  args.content = args.content + eejs.require("ep_font_size/templates/editbarButtons.ejs");
+  args.content = args.content + eejs.require("ep_font_size2/templates/editbarButtons.ejs");
   return cb();
 }
 
 exports.eejsBlock_dd_format = function (hook_name, args, cb) {
-  args.content = args.content + eejs.require("ep_font_size/templates/fileMenu.ejs");
+  args.content = args.content + eejs.require("ep_font_size2/templates/fileMenu.ejs");
   return cb();
 }
 
