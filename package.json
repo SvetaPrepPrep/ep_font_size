@@ -4,8 +4,8 @@
   "version": "0.1.11",
   "license": "Apache-2.0",
   "author": {
-    "name": "John McLear",
-    "email": "john@mclear.co.uk"
+    "name": "Sveta Shchukina",
+    "email": "sveta@preprep.ru"
   },
   "dependencies": {},
   "peerDependencies": {
@@ -16,6 +16,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JohnMcLear/ep_font_size.git"
+    "url": "https://github.com/SvetaPrepPrep/ep_font_size.git"
   }
 }
