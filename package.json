@@ -1,7 +1,7 @@
 {
   "description": "Add support for Font Sizes",
   "name": "ep_font_size2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "Apache-2.0",
   "author": "Sveta Shchukina <sveta@preprep.ru>",
   "dependencies": {
