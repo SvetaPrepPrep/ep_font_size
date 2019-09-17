@@ -1,34 +1,61 @@
 <div>
-<li id="font-size" class="acl-write">
-    <select class="size-selection">
-        <option value="dummy" selected data-l10n-id="ep_font_size.size buttonicon" title="Размер шрифта"></option>
-        <option value="fs8">8</option>
-        <option value="fs9">9</option>
-        <option value="fs10">10</option>
-        <option value="fs11">11</option>
-        <option value="fs12">12</option>
-        <option value="fs13">13</option>
-        <option value="fs14">14</option>
-        <option value="fs15">15</option>
-        <option value="fs16">16</option>
-        <option value="fs17">17</option>
-        <option value="fs18">18</option>
-        <option value="fs19">19</option>
-        <option value="fs20">20</option>
-    </select>
-</li>
+    <li id="font-size" class="acl-write">
+        <select class="size-selection" title="Размер шрифта">
+            <option value="dummy" selected disabled="disabled">&#59423;</option>
+            <option value="fs8">8</option>
+            <option value="fs9">9</option>
+            <option value="fs10">10</option>
+            <option value="fs11">11</option>
+            <option value="fs12">12</option>
+            <option value="fs13">13</option>
+            <option value="fs14">14</option>
+            <option value="fs15">15</option>
+            <option value="fs16">16</option>
+            <option value="fs17">17</option>
+            <option value="fs18">18</option>
+            <option value="fs19">19</option>
+            <option value="fs20">20</option>
+        </select>
+    </li>
 </div>
 
 <style>
-.ep_font_size {
-  font-size:font-awesome;
-}
-.ep_font_size.buttonicon:before {
-  content:"\e81f";
-  top: 2px ;
-}
-.size-selection {
-  margin-left:-3px;
-  border-radius: 0 3px 3px 0 !important;
-}
+    /*.ep_font_size { !* html &#59423; css content:"\e81f"; *!*/
+    /*font-size:font-awesome;*/
+    /*}*/
+
+    /* reset*/
+    .size-selection,
+    .size-selection:focus,
+    .size-selection:active {
+        outline: 0 !important;
+        box-shadow: none;
+        border: 0 !important;
+    }
+
+    .size-selection {
+        min-width: 42px;
+        height: 32px;
+        background: #e3e3e3;
+        cursor: pointer;
+        margin-left: -3px;
+        border-radius: 0 3px 3px 0 !important;
+    }
+
+    .size-selection:hover {
+        background: #f7f7f7;
+    }
+
+    .size-selection option {
+        cursor: pointer;
+    }
+
+    .size-selection option[value="dummy"] {
+        font-size: font-awesome;
+    }
+
+    .size-selection option[value="dummy"][disabled] {
+        display: none;
+    }
+
 </style>
