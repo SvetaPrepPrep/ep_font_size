@@ -25,9 +25,6 @@ exports.postAceInit = function(hook, context){
   $('.font_size').hover(function(){
     $('.submenu > .size-selection').attr('size', 6);
   });
-  $('.font-size-icon').click(function(){
-    $('#font-size').toggle();
-  });
 };
 
 // To do show what font size is active on current selection

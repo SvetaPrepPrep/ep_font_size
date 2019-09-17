@@ -1,13 +1,7 @@
-<li class="separator acl-write"></li>
 <div>
-<li class="acl-write font-size-icon ep_font_size">
-  <a title="Font Size">
-    <span class="buttonicon"></span>
-  </a>
-</li>
-<li id="font-size" class="acl-write" style="display:none;">
+<li id="font-size" class="acl-write">
     <select class="size-selection">
-        <option value="dummy" selected data-l10n-id="ep_font_size.size">Size</option>
+        <option value="dummy" selected data-l10n-id="ep_font_size.size buttonicon" title="Размер шрифта"></option>
         <option value="fs8">8</option>
         <option value="fs9">9</option>
         <option value="fs10">10</option>
@@ -29,39 +23,12 @@
 .ep_font_size {
   font-size:font-awesome;
 }
-.ep_font_size > a > .buttonicon:before{
+.ep_font_size.buttonicon:before {
   content:"\e81f";
-  top: 2px !important;
+  top: 2px ;
 }
 .size-selection {
   margin-left:-3px;
   border-radius: 0 3px 3px 0 !important;
-  /*background-color: #74ab60;*/
 }
-
-/*li.acl-write.ep_font_size a span.buttonicon {*/
-/*display: none !important;*/
-/*}*/
-
-/*li.acl-write.ep_font_size a {*/
-/*position: relative;*/
-/*display: block;*/
-/*width: 30px;*/
-/*height: 16px;*/
-/*background: #f52c41;*/
-/*}*/
-
-/*li.acl-write.ep_font_size a::after {*/
-/*position: absolute;*/
-/*top: 1px;*/
-/*left: -4px;*/
-/*content: '';*/
-/*width: 100%;*/
-/*height: 100%;*/
-/*background-position: center;*/
-/*background-repeat: no-repeat;*/
-/*transform: scale(0.45);*/
-/*background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBoZWlnaHQ9IjgwIiB3aWR0aD0iODAiIGZpbGw9IiMwMDAwMDAiIHZlcnNpb249IjEuMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgODAgODAiIHhtbDpzcGFjZT0icHJlc2VydmUiIHN0eWxlPSIiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJub25lIi8+PGcgY2xhc3M9ImN1cnJlbnRMYXllciIgc3R5bGU9IiI+PHRpdGxlPkxheWVyIDE8L3RpdGxlPjxnIGlkPSJzdmdfMSIgY2xhc3M9IiIgZmlsbD0iIzc2NzY3NiIgZmlsbC1vcGFjaXR5PSIxIj48ZyBpZD0ic3ZnXzIiIGZpbGw9IiM3Njc2NzYiIGZpbGwtb3BhY2l0eT0iMSI+PHJlY3QgeD0iMzQiIHk9IjI3IiBmaWxsPSIjNzY3Njc2IiB3aWR0aD0iNCIgaGVpZ2h0PSIyOSIgaWQ9InN2Z18zIiBmaWxsLW9wYWNpdHk9IjEiLz48L2c+PGcgaWQ9InN2Z180IiBmaWxsPSIjNzY3Njc2IiBmaWxsLW9wYWNpdHk9IjEiPjxyZWN0IHg9IjIyIiB5PSIyNiIgZmlsbD0iIzc2NzY3NiIgd2lkdGg9IjI4IiBoZWlnaHQ9IjQiIGlkPSJzdmdfNSIgZmlsbC1vcGFjaXR5PSIxIi8+PC9nPjwvZz48ZyBpZD0ic3ZnXzYiIGNsYXNzPSIiIGZpbGwtb3BhY2l0eT0iMSIgZmlsbD0iIzc2NzY3NiI+PHJlY3QgeD0iNTciIHk9IjI1IiBmaWxsPSIjNzY3Njc2IiB3aWR0aD0iMiIgaGVpZ2h0PSIzMSIgaWQ9InN2Z183Ii8+PC9nPjwvZz48L3N2Zz4=);*/
-/*}*/
-
 </style>
