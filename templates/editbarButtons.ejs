@@ -1,6 +1,6 @@
 <div>
     <li id="font-size" class="acl-write">
-        <label class="ep_font_size _label buttonicon"></label>
+        <label class="ep_font_size _label buttonicon" title="Размер шрифта"></label>
         <select class="size-selection" title="Размер шрифта">
             <option value="fs8">8</option>
             <option value="fs9">9</option>
@@ -20,13 +20,23 @@
 </div>
 
 <style>
+    .ep_font_size._label {
+        margin-top: 5px;
+        text-align: center;
+        min-width: 25px;
+        display: block;
+        height: 28px;
+        line-height: 28px;
+        /*background: #e3e3e3;*/
+    }
+
     .ep_font_size.buttonicon {
         font-size: font-awesome;
     }
 
     .ep_font_size.buttonicon:before {
         content: "\e81f";
-        top: 2px !important;
+        top: 0;
     }
 
     #font-size {
@@ -44,12 +54,11 @@
 
     .size-selection {
         display: inline-block;
-        min-width: 37px;
-        max-width: 37px;
+        min-width: 42px;
+        max-width: 42px;
         height: 32px;
         background: #f7f7f7;
         cursor: pointer;
-        margin-left: -3px;
         border-radius: 0 3px 3px 0 !important;
     }
 
@@ -57,14 +66,10 @@
         cursor: pointer;
     }
 
-    .ep_font_size._label {
-        margin-right: -4px;
-        text-align: center;
-        min-width: 25px;
-        display: inline-block;
-        line-height: 32px;
-        min-height: 32px;
-        background: #e3e3e3;
+    @media (max-width: 680px) {
+        .ep_font_size._label {
+            display: none;
+        }
     }
 
 </style>
