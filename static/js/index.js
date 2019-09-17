@@ -97,5 +97,5 @@ exports.aceAttribClasses = function(hook, attr){
 }
 
 exports.aceEditorCSS = function(hook_name, cb){
-  return ["/ep_font_size/static/css/iframe.css"];
+  return ["/ep_font_size2/static/css/iframe.css"];
 }
