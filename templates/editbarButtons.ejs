@@ -1,7 +1,7 @@
 <div>
     <li id="font-size" class="acl-write">
+        <label class="ep_font_size _label buttonicon"></label>
         <select class="size-selection" title="Размер шрифта">
-            <option value="dummy" selected disabled="disabled">&#59423;</option>
             <option value="fs8">8</option>
             <option value="fs9">9</option>
             <option value="fs10">10</option>
@@ -20,9 +20,18 @@
 </div>
 
 <style>
-    /*.ep_font_size { !* html &#59423; css content:"\e81f"; *!*/
-    /*font-size:font-awesome;*/
-    /*}*/
+    .ep_font_size.buttonicon {
+        font-size: font-awesome;
+    }
+
+    .ep_font_size.buttonicon:before {
+        content: "\e81f";
+        top: 2px !important;
+    }
+
+    #font-size {
+        display: flex;
+    }
 
     /* reset*/
     .size-selection,
@@ -34,28 +43,28 @@
     }
 
     .size-selection {
-        min-width: 42px;
+        display: inline-block;
+        min-width: 37px;
+        max-width: 37px;
         height: 32px;
-        background: #e3e3e3;
+        background: #f7f7f7;
         cursor: pointer;
         margin-left: -3px;
         border-radius: 0 3px 3px 0 !important;
-    }
-
-    .size-selection:hover {
-        background: #f7f7f7;
     }
 
     .size-selection option {
         cursor: pointer;
     }
 
-    .size-selection option[value="dummy"] {
-        font-size: font-awesome;
-    }
-
-    .size-selection option[value="dummy"][disabled] {
-        display: none;
+    .ep_font_size._label {
+        margin-right: -4px;
+        text-align: center;
+        min-width: 25px;
+        display: inline-block;
+        line-height: 32px;
+        min-height: 32px;
+        background: #e3e3e3;
     }
 
 </style>
