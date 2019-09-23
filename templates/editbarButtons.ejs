@@ -1,7 +1,13 @@
+<li class="separator acl-write"></li>
 <div>
-    <li id="font-size" class="acl-write">
-        <label class="ep_font_size _label buttonicon" title="Размер шрифта"></label>
-        <select class="size-selection" title="Размер шрифта">
+    <li class="acl-write font-size-icon ep_font_size">
+        <a title="Font Size">
+            <span class="buttonicon"></span>
+        </a>
+    </li>
+    <li id="font-size" class="acl-write" style="display:none;">
+        <select class="size-selection">
+            <option value="dummy" selected data-l10n-id="ep_font_size.size">Size</option>
             <option value="fs8">8</option>
             <option value="fs9">9</option>
             <option value="fs10">10</option>
@@ -20,56 +26,15 @@
 </div>
 
 <style>
-    .ep_font_size._label {
-        margin-top: 5px;
-        text-align: center;
-        min-width: 25px;
-        display: block;
-        height: 28px;
-        line-height: 28px;
-        /*background: #e3e3e3;*/
+    .ep_font_size {
+        font-size:font-awesome;
     }
-
-    .ep_font_size.buttonicon {
-        font-size: font-awesome;
+    .ep_font_size > a > .buttonicon:before{
+        content:"\e81f";
+        top: 2px !important;
     }
-
-    .ep_font_size.buttonicon:before {
-        content: "\e81f";
-        top: 0;
-    }
-
-    #font-size {
-        display: flex;
-    }
-
-    /* reset*/
-    .size-selection,
-    .size-selection:focus,
-    .size-selection:active {
-        outline: 0 !important;
-        box-shadow: none;
-        border: 0 !important;
-    }
-
-    .size-selection {
-        display: inline-block;
-        min-width: 42px;
-        max-width: 42px;
-        height: 32px;
-        background: #f7f7f7;
-        cursor: pointer;
+    .size-selection{
+        margin-left:-3px;
         border-radius: 0 3px 3px 0 !important;
     }
-
-    .size-selection option {
-        cursor: pointer;
-    }
-
-    @media (max-width: 680px) {
-        .ep_font_size._label {
-            display: none;
-        }
-    }
-
 </style>

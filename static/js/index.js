@@ -72,8 +72,12 @@ exports.aceEditEvent = function(hook, call, cb){
 // Our fontsize attribute will result in a class
 // I'm not sure if this is actually required..
 exports.aceAttribsToClasses = function(hook, context){
-  if(fs.indexOf(context.key) !== -1){
-    return [context.key];
+  if(context.key.indexOf("sizes:") !== -1){
+    var size = /(?:^| )sizes:([A-Za-z0-9]*)/.exec(context.key);
+    return ['sizes:' + size[1] ];
+  }
+  if(context.key == 'sizes'){
+    return ['sizes:' + context.value ];
   }
 }
 

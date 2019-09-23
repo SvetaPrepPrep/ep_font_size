@@ -1,11 +1,7 @@
 exports.collectContentPre = function(hook, context){
-  var tname = context.tname;
-  var state = context.state;
-  var lineAttributes = state.lineAttributes
-  var tagIndex = tname;
-  var fs = (["fs8", "fs9", "fs10", "fs11", "fs12", "fs13", "fs14", "fs15", "fs16", "fs17", "fs18", "fs19", "fs20"]);
-  if(fs.indexOf(tname) !== -1){
-    context.cc.doAttrib(state, tname);
+  var sizes = /(?:^| )sizes:([A-Za-z0-9]*)/.exec(context.cls);
+  if(sizes && sizes[1]){
+    context.cc.doAttrib(context.state, sizes[0]);
   }
 };
 
